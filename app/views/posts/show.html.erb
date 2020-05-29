@@ -1,0 +1,54 @@
+<h1>posts/showのID(<%= @post.id %>)のページだよ</h1>
+<div class="home-trendlist">
+<!--
+  <div class="main posts-index">
+    <div class="container1">
+      <% @posts.each do |post| %>
+      <div class="posts-index-item">
+        <%= post.content %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+-->
+  <ul>
+    <% @posts.each do |post| %>
+    <li>
+      <div class="posts-index-item">
+        <%= link_to(post.content,post.url) %>
+      </div>
+    <% end %>
+
+<!--    <li>
+      <a href="https://qiita.com/8amjp/items/b089a3f2e6dbc59cd5c8">[1] スナック「jQuery」</a>
+      <span>LGTM 861</span></li>
+    <li>
+      <a href="https://qiita.com/sugulu/items/c0e8a5e6b177bfe05e99">[2] AIエンジニアが気をつけたいPython実装のノウハウ・コツまとめ</a>
+      <span>LGTM 498</span></li>
+    <li>
+      <a href="https://qiita.com/hirodragon/items/e2330edc1d1a329d17f5">[3] 明日から使えるDDDのためのユースケース駆動開発（ICONIXプロセス）</a>
+      <span>LGTM 79</span></li>
+    <li>
+      <a href="https://qiita.com/zawawahoge/items/2ec3b638422c7c8cac8f">[4] 11種類のオペレーティング・システムについてまとめてみた</a>
+      <span>LGTM 90</span></li>
+    <li>
+      <a href="https://qiita.com/Ishotihadus/items/a9c22e0eff8b490b62a9">[5] 凛世の自転周期を計測する</a>
+      <span>LGTM 53</span></li>
+    <li>
+      <a href="https://qiita.com/rudorufu1981/items/c6bc5e4d72cfe1cb7f14">[6] 【Python】競プロテンプレ【AtCoder】</a>
+      <span>LGTM 60</span></li>
+    <li>
+      <a href="https://qiita.com/Yupine/items/7d8f5354dac814ec3c6a">[7] 【最短で理解する】データ分析のためのPython基礎</a>
+      <span>LGTM 60</span></li>
+    <li>
+      <a href="https://qiita.com/fruitriin/items/118c773b045101db7651">[8] Laravel7からVue.jsを使う最短レシピ</a>
+      <span>LGTM 67</span></li>
+    <li>
+      <a href="https://qiita.com/DyingFrog/items/83b3f7221de9b9a35fcc">[9] ハッキングラボのつくりかたをやってみて試行錯誤した点</a>
+      <span>LGTM 25</span></li>
+    <li>
+      <a href="https://qiita.com/MuAuan/items/bc40795469ceb6b574fe">[10] 【感染症モデル入門】日本各地が終息へ・・・♬</a>
+      <span>LGTM 45</span></li>
+    -->
+  </ul>
+</div>
